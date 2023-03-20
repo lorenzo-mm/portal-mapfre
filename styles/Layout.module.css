@@ -1,0 +1,48 @@
+
+.imgStyle {
+  @apply bg-white rounded-l-sm;
+  position: relative;
+  overflow: hidden;
+}
+
+.container_images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.ImageAgency {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  width: 75%;
+  left: 3rem;
+  bottom: 2rem;
+}
+
+.container_text {
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19.75rem;
+  font-weight: 500;
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  font-family: 'Bevan', cursive;
+  color: #e4e8ed;
+  -webkit-text-stroke: 2px #D81e05;
+}
+
+.color_footer {
+  text-align: center;
+  color: #D10000;
+  align-items: center;
+}

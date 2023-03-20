@@ -1,0 +1,53 @@
+
+.input_group {
+  @apply w-full;
+  position: relative;
+}
+
+.input_text {
+  @apply w-96 py-4 px-4 bg-transparent placeholder-white;
+  border-bottom: 2px solid #ffffff;
+}
+
+
+.button {
+  @apply w-44 bg-white border rounded-xl;
+  @apply my-1.5 py-3 w-48 text-red text-lg;
+  position: relative;
+  border: 2px solid #ffffff;
+  transition: all 400ms ease;
+}
+
+.button:hover {
+  @apply text-white bg-transparent;
+  transition: all 400ms ease;
+}
+
+
+.button_custom {
+  border: 1px solid #ffffff;
+  @apply w-64 my-1.5 py-3 gap-2; 
+  @apply border-2 rounded-xl text-white;
+  position: relative;
+  transition: all 400ms ease;
+}
+
+.button_custom:hover {
+  @apply bg-white bg-transparent;
+  color: #D10000;
+  background-color: #ffffff;
+  transition: all 400ms ease;
+}
+
+
+.input_text + * {
+  color: #D81e05;
+}
+.input_text:focus + * {
+  color: #D81e05;
+}
+
+.input_text:not([type=email]) ～ span:hover *{
+  color: #D81e05;
+  cursor: pointer;
+}
