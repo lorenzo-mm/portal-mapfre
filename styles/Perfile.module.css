@@ -1,0 +1,39 @@
+
+.principal_text {
+  padding: 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button {
+  @apply text-lg text-red bg-transparent border rounded-xl;
+  @apply w-64 my-1.5 py-3 gap-2;
+  position: relative;
+  border: 2px solid #d81e05;
+  transition: all 400ms ease;
+  font-weight: 500;
+}
+
+.button:hover {
+  @apply text-white bg-red;
+  transition: all 400ms ease;
+}
+
+
+.image_container>div {
+  position: unset !important;
+}
+
+.image_perfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: contain;
+  position: relative !important;
+  /* height: unset !important; */
+  /* width: 100% !important; */
+  border-radius: 50px;
+  margin: .5rem 0;
+}

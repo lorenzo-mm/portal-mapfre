@@ -116,7 +116,7 @@ export default function Register () {
 
           {/* bottom */}
           <p className='text-center text-white p-4'>
-            ¿Ya tienes una cuenta? <Link href='/login' className='text-blue-600'>Accede Aquí</Link>
+            ¿Ya tienes una cuenta? <Link href='/login' className='text-blue-700'>Accede Aquí</Link>
           </p>
         </div>
       </section>

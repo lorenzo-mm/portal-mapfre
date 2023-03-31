@@ -2,19 +2,24 @@
 
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./layout/**/*.{js,ts,jsx,tsx}",
-],
+    './app/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './layout/**/*.{js,ts,jsx,tsx}'
+  ],
   theme: {
     extend: {
       colors: {
-        'red': '#D81e05',
-        'white': '#ffffff',
+        red: '#D81e05',
+        white: '#ffffff',
+        gray: '#E7EBED'
       },
-      height: {
+      fontFamily: {
+        helvetica: 'helvetica'
       },
-    },
+      maxHeight: {
+        502: '502px'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }

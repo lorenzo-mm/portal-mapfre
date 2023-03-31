@@ -26,11 +26,11 @@ export default function Home () {
 // Guest
 function Guest () {
   return (
-    <main className='container mx-auto text-center py-20'>
-      <h3 className='text-4xl font-bold '>Guest Homepage</h3>
+    <main className='flex justify-center container mx-auto text-center py-20'>
+      <h3 className='text-4xl font-bold '>Página de inicio de invitado</h3>
 
       <div className='flex justify-center'>
-        <Link href='/login'><a className='mt-5 px-10 py-1 rounded-sm bg-red text-gray-50'>Accede Aquí</a></Link>
+        <Link href='/login' className='mt-5 px-10 py-1 rounded-ms bg-red text-gray-50'> Accede Aquí</Link>
       </div>
     </main>
   )
@@ -39,20 +39,24 @@ function Guest () {
 // Autorizacion usuario
 function User ({ session, handleSignOut }) {
   return (
-    <main className='container mx-auto text-center py-20'>
-      <h3 className='text-4xl font-bold '>Authorize User Homepage</h3>
+    <main className='flex flex-col justify-center mx-auto text-center h-screen bg-red'>
+      <div className='flex justify-center'>
+        <h1 className={styles.principal_text}>Bienvenido al Portal de Mapfre</h1>
+      </div>
 
       <div className='details'>
-        <h5>{session.user.name}</h5>
-        <h5>{session.user.email}</h5>
+        <h3 className='text-white text-4xl font-bold'>As iniciado sesión con éxito</h3>
+        <h3 className='text-gray text-3xl font-bold my-4'>{session.user.name}</h3>
       </div>
 
-      <div className='flex justify-center'>
-        <button onClick={handleSignOut} className='mt-5 px-10 py-1 rounded-sm bg-red border-gray-50'>Cerrar sesión</button>
-      </div>
+      <div className='my-8'>
+        <div className='flex justify-center'>
+          <Link href='/profile' className={styles.button}>Perfil</Link>
+        </div>
 
-      <div className='flex justify-center'>
-        <Link href='/perfil'><a className='mt-5 px-10 py-1 rounded-sm bg-red text-gray-500'>Perfil</a></Link>
+        <div className='flex justify-center'>
+          <button onClick={handleSignOut} className={styles.button}>Cerrar sesión</button>
+        </div>
       </div>
     </main>
 

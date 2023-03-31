@@ -11,7 +11,7 @@
 
 
 .button {
-  @apply w-44 bg-white border rounded-xl;
+  @apply bg-white border rounded-xl;
   @apply my-1.5 py-3 w-48 text-red text-lg;
   position: relative;
   border: 2px solid #ffffff;

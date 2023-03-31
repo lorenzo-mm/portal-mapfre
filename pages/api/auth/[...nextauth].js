@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth/next'
 import GoogleProvider from 'next-auth/providers/google'
 import GithubProvider from 'next-auth/providers/github'
-import { SessionProvider } from 'next-auth/react'
+import CredentialsProvider from 'next-auth/providers/credentials'
 import connectMongo from '../../../database/conn'
 import Users from '../../../model/Schema'
 import { compare } from 'bcryptjs'
@@ -22,7 +22,7 @@ export default NextAuth({
       clientSecret: process.env.GITHUB_SECRET
     }),
 
-    SessionProvider({
+    CredentialsProvider({
       name: 'Credentials',
       async authorize (credentials, req) {
         connectMongo().catch(error => { error: 'Connection Failed...!' })
